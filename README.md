@@ -1,4 +1,4 @@
-**Northloop — IT Product Development Agency**
+# Northloop — IT Product Development Agency
 
 Northloop designs and builds custom websites, Telegram bots, and workflow automation for businesses that need working software, not templates. Every project is scoped, built, and delivered personally — from the first message to launch and support after.
 
