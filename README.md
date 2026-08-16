@@ -1,4 +1,4 @@
-# Northloop — studio website
+# Northloop — IT Product Development Agency
 
 A plain HTML/CSS/JS, multi-page site: no build step, no framework. Open `index.html`
 directly in a browser, or deploy as static files.
