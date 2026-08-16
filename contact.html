@@ -49,14 +49,16 @@
     <section>
       <div class="container split">
         <div>
-          <form id="contact-form" action="#" method="POST">
+          <form id="contact-form" action="https://formspree.io/f/xgawlprk" method="POST">
+            <input type="hidden" name="_subject" value="New message from Northloop site">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <div class="field">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
             </div>
             <div class="field">
               <label for="project-type">What do you need?</label>
@@ -73,7 +75,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Send message</button>
             <p class="form-note">
-              This form isn't wired to a backend yet — before this site goes live, connect it to a form service (e.g. Formspree) or a simple server endpoint. Until then, use the email link below.
+              This form sends straight to my inbox via Formspree — no data is stored anywhere else.
             </p>
           </form>
         </div>
