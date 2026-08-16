@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Northloop</title>
+  <meta name="description" content="Real projects and demos: a small-business website concept, a Telegram bot, and an n8n automation workflow.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">Northloop<span class="dot">.</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu container">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Real projects, labeled honestly.</h1>
+        <p>Northloop is early-stage, so this page says exactly what each project is — a live client case study, a self-initiated pitch, or a demo built to show how something works. Nothing here is dressed up as more than it is.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid cols-3">
+
+        <!-- Project 1: Salon website -->
+        <div class="card">
+          <div class="mock-frame">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <svg viewBox="0 0 200 100" fill="none" stroke="#4f8cff" stroke-width="2">
+                <rect x="10" y="10" width="180" height="16" rx="3" stroke="#22d3ee"/>
+                <rect x="10" y="34" width="80" height="56" rx="3"/>
+                <rect x="98" y="34" width="36" height="26" rx="3"/>
+                <rect x="140" y="34" width="50" height="26" rx="3"/>
+                <rect x="98" y="66" width="92" height="24" rx="3"/>
+              </svg>
+            </div>
+          </div>
+          <span class="tag">Case study — client pitch in progress</span>
+          <h3 style="margin-top: var(--space-3);">Salon Website Concept — Gdańsk</h3>
+          <p>A real local hair salon had only a Booksy listing and a Facebook page — no proper website. I designed and built a multi-page site from scratch: a home page, service pages, an About page, and a photo gallery with a lightbox, plus a custom favicon. Currently being pitched to the owner.</p>
+          <p><strong>Stack:</strong> HTML, CSS, JavaScript — no framework.</p>
+          <a href="https://github.com/BogdanFomin-2612/HairSalonGdanskPage" target="_blank" rel="noopener">View code on GitHub →</a>
+        </div>
+
+        <!-- Project 2: Bot -->
+        <div class="card">
+          <div class="mock-frame">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <svg viewBox="0 0 200 100" fill="none" stroke="#4f8cff" stroke-width="2">
+                <rect x="20" y="10" width="120" height="20" rx="10" stroke="#22d3ee"/>
+                <rect x="60" y="40" width="120" height="20" rx="10"/>
+                <rect x="20" y="70" width="90" height="20" rx="10" stroke="#22d3ee"/>
+              </svg>
+            </div>
+          </div>
+          <span class="tag tag-demo">Demo project</span>
+          <h3 style="margin-top: var(--space-3);">WeekendTrip Demon — Telegram Bot</h3>
+          <p>A Telegram bot built to demonstrate practical bot-building skills: handling user input, calling external APIs, and returning structured trip-planning suggestions in a conversation flow.</p>
+          <p><strong>Stack:</strong> Telegram Bot API, Python.</p>
+          <a href="contact.html">Ask for a walkthrough →</a>
+        </div>
+
+        <!-- Project 3: Automation -->
+        <div class="card">
+          <div class="mock-frame">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <svg viewBox="0 0 200 100" fill="none" stroke="#4f8cff" stroke-width="2">
+                <circle cx="30" cy="50" r="14" stroke="#22d3ee"/>
+                <circle cx="100" cy="20" r="14"/>
+                <circle cx="100" cy="80" r="14"/>
+                <circle cx="170" cy="50" r="14" stroke="#22d3ee"/>
+                <path d="M42 46 L88 24 M42 54 L88 76 M112 24 L158 46 M112 76 L158 54"/>
+              </svg>
+            </div>
+          </div>
+          <span class="tag tag-demo">Demo workflow</span>
+          <h3 style="margin-top: var(--space-3);">Lead Capture → Sheet → Notification</h3>
+          <p>An n8n workflow built to show a typical automation pattern: a form submission is validated, logged to a spreadsheet, and triggers an instant Telegram notification — with no manual step in between.</p>
+          <p><strong>Stack:</strong> n8n, Google Sheets, Telegram API.</p>
+          <a href="contact.html">Ask for a walkthrough →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band">
+          <h2>Want to be the next real case study here?</h2>
+          <p>Early clients get more direct attention and, often, a better rate in exchange for a case study and a testimonial.</p>
+          <div class="hero-actions" style="justify-content:center; margin-top: var(--space-4);">
+            <a href="contact.html" class="btn btn-primary">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <div class="brand" style="margin-bottom: 8px;">Northloop<span class="dot">.</span></div>
+        <p style="margin:0;">Websites, bots &amp; automation.<br>Gdańsk, Poland.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p style="margin:0 0 8px;"><a href="services.html">Services</a></p>
+        <p style="margin:0 0 8px;"><a href="portfolio.html">Portfolio</a></p>
+        <p style="margin:0 0 8px;"><a href="about.html">About</a></p>
+        <p style="margin:0;"><a href="contact.html">Contact</a></p>
+      </nav>
+      <div>
+        <p style="margin:0;"><a href="mailto:boduakontact@gmail.com">boduakontact@gmail.com</a></p>
+        <p style="margin:8px 0 0;">© <span data-year></span> Northloop</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

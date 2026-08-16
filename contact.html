@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Northloop</title>
+  <meta name="description" content="Get in touch with Northloop about a website, bot, or automation project.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">Northloop<span class="dot">.</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get a quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu container">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Tell me what you're trying to solve.</h1>
+        <p>A couple of sentences is enough to start: what you need, and roughly what kind of business or project it's for. I reply within 24 hours, and if Northloop isn't the right fit for the job, I'll say so.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <form id="contact-form" action="#" method="POST">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="project-type">What do you need?</label>
+              <select id="project-type" name="project-type">
+                <option>Website</option>
+                <option>Bot</option>
+                <option>Automation (n8n)</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What are you trying to solve?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-note">
+              This form isn't wired to a backend yet — before this site goes live, connect it to a form service (e.g. Formspree) or a simple server endpoint. Until then, use the email link below.
+            </p>
+          </form>
+        </div>
+        <div>
+          <span class="kicker">Direct</span>
+          <h2>Prefer email?</h2>
+          <p>
+            <a href="mailto:boduakontact@gmail.com" style="font-size:1.1rem; font-weight:600;">boduakontact@gmail.com</a>
+          </p>
+          <p>I read everything that comes in personally — there's no inbox triage team yet, which for now means faster replies, not slower ones.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <div class="brand" style="margin-bottom: 8px;">Northloop<span class="dot">.</span></div>
+        <p style="margin:0;">Websites, bots &amp; automation.<br>Gdańsk, Poland.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p style="margin:0 0 8px;"><a href="services.html">Services</a></p>
+        <p style="margin:0 0 8px;"><a href="portfolio.html">Portfolio</a></p>
+        <p style="margin:0 0 8px;"><a href="about.html">About</a></p>
+        <p style="margin:0;"><a href="contact.html">Contact</a></p>
+      </nav>
+      <div>
+        <p style="margin:0;"><a href="mailto:boduakontact@gmail.com">boduakontact@gmail.com</a></p>
+        <p style="margin:8px 0 0;">© <span data-year></span> Northloop</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
